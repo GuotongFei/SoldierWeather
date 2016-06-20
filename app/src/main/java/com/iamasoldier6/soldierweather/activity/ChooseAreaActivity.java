@@ -177,7 +177,7 @@ public class ChooseAreaActivity extends Activity {
      */
     private void queryFromServer(final String type) {
         showProgressDialog();
-        HttpUtil.sendHttpRequest("http://v.juhe.cn/weather/citys?key=af2af1996d54696346d66504710ddcf5", new HttpCallbackListener() {
+        HttpUtil.sendHttpRequest("http://v.juhe.cn/weather/citys?key=1d0c94f53393a7c02ce1b0848b5adc8d", new HttpCallbackListener() {
             @Override
             public void onFinish(InputStream in) {
                 boolean result = Utility.handleResponse(SoldierWeatherDB.getInstance(MyApplication.getContext()), in);

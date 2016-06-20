@@ -83,7 +83,7 @@ public class WeatherActivity extends Activity implements View.OnClickListener {
     private void queryWeather(String name) {
         try {
             String address = "http://v.juhe.cn/weather/index?format=2&cityname=" + URLEncoder.encode(name, "UTF-8") +
-                    "&key=af2af1996d54696346d66504710ddcf5";
+                    "&key=1d0c94f53393a7c02ce1b0848b5adc8d";
             HttpUtil.sendHttpRequest(address, new HttpCallbackListener() {
                 @Override
                 public void onFinish(InputStream in) {
